@@ -1,1 +1,2 @@
-require 'lib/base.rb'
+require "bw/version"
+require "bw/base.rb"

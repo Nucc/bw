@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+
+version = ">= 0"
+
+if ARGV.first
+  str = ARGV.first
+  if str =~ /\A_(.*)_\z/
+    version = $1
+    ARGV.shift
+  end
+end
+
+gem 'bw', version
+
+load Gem.bin_path('bw', 'bw', version)
+
+exit BW::Base.call(ARGV)
