@@ -10,7 +10,8 @@ This gem is only a framework, you should extend it with your own business logic.
 Examples
 --------
 
-1. Calling a simple method
+<ol>
+<li>Calling a simple method</li>
 
 <pre>
 module Make
@@ -26,7 +27,7 @@ end
 $ bw make snapshot
 </pre>
 
-2. Calling method with parameters
+<li>Calling method with parameters</li>
 
 <pre>
 module Calculator
@@ -42,7 +43,7 @@ end
 $ bw Calculator sum 1 2
 </pre>
 
-3. Nested modules
+<li>Nested modules</li>
 
 <pre>
 module Create
@@ -59,7 +60,7 @@ end
 $ bw Create Release snapshot check.it
 </pre>
 
-4. Derivation
+<li>Derivation</li>
 
 <pre>
 module Create
@@ -78,7 +79,7 @@ end
 $ bw Create Release version
 => 1.0
 </pre>
-
+</ol>
 Installation
 ------------
 
@@ -92,13 +93,13 @@ And then execute:
 
 <pre>
 $ bundle
-<pre>
+</pre>
 
 Or install it yourself as:
 
-</pre>
-$ gem install bw
 <pre>
+$ gem install bw
+</pre>
 
 And then add these lines to your code:
 
